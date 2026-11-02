@@ -122,3 +122,13 @@ ros2 launch my_robot_nodes square.launch.py side_length:=0.8
 The client waits for odometry and both action servers, then sends one drive goal and one left
 quarter-turn goal for each of four sides. It stops the sequence and reports the side if any goal is
 rejected, aborted or canceled.
+
+## Results
+
+### Depth Camera and Point Cloud
+
+![RViz depth camera and point cloud](screenshots/depth_camera.png)
+
+### Square Action Graph
+
+![Square driver ROS graph](screenshots/square_rqt_graph.png)

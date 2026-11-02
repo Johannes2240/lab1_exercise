@@ -104,7 +104,8 @@ def main():
     rclpy.init()
     node = SquareDriver()
     try:
-        node.drive_square()
+        if node.drive_square():
+            rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
     node.destroy_node()
